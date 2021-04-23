@@ -125,8 +125,75 @@
   <section id="tatum">
     <div class="wrapper">
       <!-- Add Tatum's visualizations/insights -->
-      <iframe width="100%" height="1038" frameborder="0"
-      src="https://observablehq.com/embed/@twhitehead00/bubble-chart?cells=chart"></iframe>
+      <div>
+      <h1>Forests and Deforestation</h1>
+      <h3>Background</h3>
+      // add source
+      <p> 
+        Much of the world's landamass is covered by forest. Forests account for 38% of all habitable land. 
+        That is over one-third of habitable land and around one qarter of the total landmass on this planet! 
+        This is a signinfant decrease from what it used to be. Currently half of all habitable land is used for agriculture.
+      </p>
+
+      <h3>Net Forestation Changes</h3>
+      <p>
+        Lets try to understand that decrease. We can think of forestatio in terms of deforestation (loss of forest) and afforestation (gain of forest).
+        Afforestation includes both natureal forest expansion and supernatural expansion at the hands of humans. 
+        Thus, net forest change is not the same as defortestation, it inlcudes both losses and gains. Here we can see the net changes in forest cover from 1990 to 2015. 
+        Countries shown in yellow have experienced net deforestation, countires shown in blue have experienced net afforestation.
+      </p>
+      <p>
+        We can see that Russia has experienced the highest gain of net forest of any nation and Brazil, the highest loss of net forest area.
+      </p>
+      <div id="observablehq-l-c012e4c8"></div>
+      <div id="observablehq-chart-c012e4c8"></div>
+      <p>Credit: <a href="https://observablehq.com/@twhitehead00/deforestation-data-viz">Changes in Forestation 1990 - 2015 by Tatum</a></p>
+      
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/@twhitehead00/deforestation-data-viz.js?v=3";
+      new Runtime().module(define, name => {
+        if (name === "l") return new Inspector(document.querySelector("#observablehq-l-c012e4c8"));
+        if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-c012e4c8"));
+      });
+      </script>
+
+
+
+      <h3>Forest Distribution</h3>
+      <p>Here we can see the shares of forest area accross world regions. We see that Europe, thanks to Russia, 
+        has the largest share of global forest area. This is followed by South America and then Africa.
+      </p>
+
+      <p>20</p>
+      <div id="observablehq-chart20-03c1aa07"></div>
+        <p>Credit: <a href="https://observablehq.com/@twhitehead00/bubble-chart">Forest distribution accross regions by Tatum</a></p>
+
+        <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@twhitehead00/bubble-chart.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "chart20") return new Inspector(document.querySelector("#observablehq-chart20-03c1aa07"));
+        });
+        </script>
+
+
+
+
+      <p>90</p>
+      <div id="observablehq-chart90-03c1aa07"></div>
+      <p>Credit: <a href="https://observablehq.com/@twhitehead00/bubble-chart">Forest distribution accross regions by Tatum</a></p>
+
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/@twhitehead00/bubble-chart.js?v=3";
+      new Runtime().module(define, name => {
+        if (name === "chart90") return new Inspector(document.querySelector("#observablehq-chart90-03c1aa07"));
+      });
+      </script>
+
+      
+
     </div>
   </section>
   <section id="jaime">
