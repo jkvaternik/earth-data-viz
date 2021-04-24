@@ -126,7 +126,6 @@ new Runtime().module(define, name => {
       <div>
         <h1>Forests and Deforestation</h1>
         <h3>Background</h3>
-        // add source
         <p>
           Much of the world's landamass is covered by forest. Forests account for 38% of all habitable land.
           That is over one-third of habitable land and around one qarter of the total landmass on this planet!
@@ -139,24 +138,34 @@ new Runtime().module(define, name => {
         <p>
           Lets try to understand that decrease. We can think of forestation in terms of deforestation
           (loss of forest) and afforestation (gain of forest).
-          Afforestation includes both natureal forest expansion and supernatural expansion at the hands of humans.
+          Afforestation includes both natural forest expansion and supernatural expansion at the hands of humans.
           Thus, net forest change is not the same as defortestation,
           it inlcudes both losses and gains. Here we can see the net changes in forest cover from 1990 to 2015.
           Countries shown in yellow have experienced net deforestation, countires shown in blue have experienced net
           afforestation.
         </p>
+       
+        <p style="font-size: 30px;">Brazil has experienced the most deforestation. China has experienced the most afforestation.</p>
+
+        <p>Despite afforestation in some regions, it is not enough to make up for the loss of forest elsewhere. 
+          If we want to preserve this natural rescource changes to our current agricultrual practices will need to be made.</p>
 
         <div id="observablehq-l-c012e4c8"></div>
         <div id="observablehq-chart-c012e4c8"></div>
         <p>Credit: <a href="https://observablehq.com/@twhitehead00/deforestation-data-viz">Changes in Forestation 1990 -
             2015 by Tatum</a></p>
+        <p>Data: <a href="https://fra-data.fao.org/WO/assessment/fra2020">OurWorldInData</a></p>
+
+        <p>Here we can see the cumulitive percent change in forestation for the nations most affected by change. </p>
+
         <div id="observablehq-viewof-metric-538c9937"></div>
         <div id="observablehq-chart-538c9937"></div>
         <p>Credit: <a href="https://observablehq.com/@twhitehead00/changes-in-forestation-1990-2015">Changes in
             Forestation 1990 - 2015 by Tatum</a></p>
-        <p>
+        <p>Data: <a href="https://fra-data.fao.org/WO/assessment/fra2020">OurWorldInData</a></p>
 
-        </p>
+        
+
 
         <script type="module">
           import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -180,19 +189,32 @@ new Runtime().module(define, name => {
 
         <h3>Forest Distribution</h3>
 
+        <p>Below we can see the total change in forest distribution expereinced by the most forested nations from 1990 to 2020. This helps us gain a better idea of 
+          where deforestation and afforestation is occuring so we can take a deeper look into the happenings in these regions. 
 
-        <h4>Forest distribution accross regions 2020</h4>
-        <p>
-          Below are a few differnt looks at the forest distribution accross regions of the globe in 2020.
-
-
-
+          <li><i>note that some data may be double counted, for example the feild Asia includes data from China although China is also seen independently on the chart</i></li>
         </p>
 
         <div id="observablehq-chart-5f9bcd1f"></div>
         <p>Credit: <a href="https://observablehq.com/@twhitehead00/horizontal-bar-chart">Forest distribution accross
             regions by Tatum</a></p>
+        <p>Data: <a href="https://ourworldindata.org/deforestation">OurWorldInData</a></p>
 
+
+
+        
+        <p>Below we can see the distribution of forest area across regions of the globe. The bubble visualizations are not that insightful but they were
+          difficult to make and I leared a lot in the process of doing so. They are included to demonstrate the exploratory process of this project.
+           
+        </p>
+
+
+        <p style="font-size: 30px;">Russia is home to the world's largest forest.</p>
+        <p>Many think the Amazon in brazil is the largest forest.</p>
+
+        <p style="font-size: 30px;"> Brazil, the United States, Canada, China, Australia, 
+          and the Democratic Republic of Congo also contain a significant chunk of the global forest area.</p>
+        <h4>Forest distribution accross regions 2020</h4>
         <script type="module">
           import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
           import define from "https://api.observablehq.com/@twhitehead00/horizontal-bar-chart.js?v=3";
@@ -203,6 +225,7 @@ new Runtime().module(define, name => {
         <div id="observablehq-chart20-03c1aa07"></div>
         <p>Credit: <a href="https://observablehq.com/@twhitehead00/bubble-chart">Forest distribution accross regions by
             Tatum</a></p>
+        <p>Data: <a href="https://ourworldindata.org/deforestation">OurWorldInData</a></p>
 
         <script type="module">
           import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -214,9 +237,11 @@ new Runtime().module(define, name => {
 
 
         <h4>Forest distribution accross regions 1990</h4>
+  
         <div id="observablehq-chart90-03c1aa07"></div>
         <p>Credit: <a href="https://observablehq.com/@twhitehead00/bubble-chart">Forest distribution accross regions by
             Tatum</a></p>
+        <p>Data: <a href="https://ourworldindata.org/deforestation">OurWorldInData</a></p>
 
         <script type="module">
           import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
