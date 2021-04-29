@@ -27,7 +27,7 @@
     </div>
   </section>
   <section id="alex">
-    <div class="wrapper">
+    <div class="wrapper" style="width: 90%;">
       <!-- Add Alex's visualizations/insights -->
       <h1>CO2 Emissions</h1>
       <h2>Background</h2>
@@ -140,9 +140,48 @@
         <li>Facet, juxtapose: juxtapose every country's chart.</li>
         <li>Map, color hue: color represents energy type.</li>
       </div>
+      <h3>Process</h3>
+      <p>In this section, I display the process of coming up with my final visualizations.</p>
+      <h4>Energy Production Over Time</h4>
+      <p>For this visualization, I originally tried creating a bar chart for each country, and having a user input scroll bar to 
+        choose what year the bar charts represented. The idea was to convey how the distributions of energy types changed over time.
+      </p>
+      <div id="observablehq-viewof-distributionYear-d25631b5"></div>
+<div id="observablehq-viewof-energyDistributions-d25631b5"></div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof distributionYear") return new Inspector(document.querySelector("#observablehq-viewof-distributionYear-d25631b5"));
+  if (name === "viewof energyDistributions") return new Inspector(document.querySelector("#observablehq-viewof-energyDistributions-d25631b5"));
+  return ["getData","energyDistributions","getEnergyViz","energyAndCo2Plot"].includes(name);
+});
+</script>
+      <p>The issue with this visualization is that it did not effectively show how the distributions changed over time. I ended up 
+        using area charts for each country to show the distributions of energy production over time.
+      </p>
+      <h4>What contributes to CO2 emissions.</h4>
+      <p>In this visualization, I wanted to show which energy types contributed most to CO2 emissions. I attempted to do this by 
+        normalizing the data by calculating the standard deviations of CO2 and all of the energy types.</p>
+        <div id="observablehq-viewof-stdLineChart-c20ea3d7"></div>
+
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof stdLineChart") return new Inspector(document.querySelector("#observablehq-viewof-stdLineChart-c20ea3d7"));
+});
+</script>
+      <p>This issue with this visualization was that there was no clear way to interpret the fluctuations in the lines since 
+        my unit was a standard deviation. I ended up displaying CO2 emissions and the distributions of energy types next to each other 
+        so one could compare them.
+      </p>
       <h3>Exploration
       </h3>
-      <p>First, let's check out how CO2 emissions have been changing
+      <p>In this section, we will beging the exploration of CO2 emissions using the final visualizations that I created.
+        First, let's check out how CO2 emissions have been changing
         over the years for a select few countries: China, United States,
         Canada, Japan, Iran, and India. We are focusing in on these six
         countries because they are some of the highest CO2 emitting
@@ -173,7 +212,9 @@ new Runtime().module(define, name => {
         <li>Is there a relationship between CO2 emissions and energy production over time for each country? What is it?</li>
       </p>
       <p style="font-size: 30px;">Coal Production Contributes the Most to CO2 Emissions</p>
-      <p>The y-axis dispays CO2 emissions in Tonnes of CO2 and Energy Production in Quant BTU.</p>
+      <p>The y-axis dispays CO2 emissions in Tonnes of CO2 and Energy Production in Quant BTU. The graphs on the left are 
+        plotting CO2 data, while the graphs on the right are plotting energy production data.
+      </p>
       <div id="observablehq-viewof-energyAndCo2Plot-e47b2456"></div>
 <p>Credit: <a href="https://observablehq.com/@akaufmann038/home-page">By Alexander Kaufmann</a></p>
 <p>Data: <a href="https://www.eia.gov/international/data/country/CHN/total-energy/total-energy-production?pd=44&p=004000000000000000000000000000000000000000000000000000000f00o&u=0&f=A&v=mapbubble&a=-&i=none&vo=value&&t=C&g=none&l=249--38&s=315532800000&e=1514764800000">EIA.gov</a></p>
@@ -192,7 +233,9 @@ new Runtime().module(define, name => {
         <li>What countries have been increasing their "nuclear and other" energy?</li>
       </p>
       <p style="font-size: 30px;">China and the United States have decreased their coal production in recent years.</p>
-      <p>The y-axis displays the percent of an energy type out of total energy production.</p>
+      <p>The y-axis displays the percent of an energy type out of total energy production. The color areas represent the percentage 
+        of the energy types. For a specific moment in time, the width of the color areas represent the current percentage.
+      </p>
       <div id="observablehq-viewof-percentDist-8f1e7cba"></div>
 <p>Credit: <a href="https://observablehq.com/@akaufmann038/home-page">By Alexander Kaufmann</a></p>
 <p>Data: <a href="https://www.eia.gov/international/data/country/CHN/total-energy/total-energy-production?pd=44&p=004000000000000000000000000000000000000000000000000000000f00o&u=0&f=A&v=mapbubble&a=-&i=none&vo=value&&t=C&g=none&l=249--38&s=315532800000&e=1514764800000">EIA.gov</a></p>
