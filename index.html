@@ -13,21 +13,47 @@
 </head>
 
 <body>
-    <section id="landing">
-    <div class="wrapper">
+  <section id="landing">
+    <div class="w">
       <div id="title">
         <h1 style="color: white; display: inline-block; margin-right:
         50px;">A Case for the Environment</h1>
         <h4 style="color: white; display: inline-block">Looking at our
-          earth and its data</h4>
-        <p>The world is heating up! Increasing green house gas emissions are causing the temperatures to rise.
-          This is wreaking havock on our planet. </p>
+          Earth and its data.</h4>
+        <p style="color: #081522">The world is heating up! Growing
+          human population and increasing green house gas emissions are
+          causing global temperatures to rise. This is wreaking havoc on
+          our planet and effecting our environment around us in multiple
+          ways. CO2 emissions, deforestation and water scarcity are
+          pressing issues and can be explored more below. </p>
+        <br />
       </div>
-      <!-- Short introduction to project -->
+      <div>
+        <div id="grid-buttons">
+          <div class="grid-button">
+            <img
+              src="https://environment-data-viz.s3-us-west-1.amazonaws.com/assets/marek-piwnicki-WiZOyYqzUss-unsplash.jpg"
+              alt="co2" />
+            <a href="#alex">CO2 Emissions</a>
+          </div>
+          <div class="grid-button">
+            <img src="https://environment-data-viz.s3-us-west-1.amazonaws.com/assets/liam-pozz-4iwLxkESGe4-unsplash.jpg"
+              alt="forest" />
+            <a href="#tatum">Forests and Deforestation</a>
+          </div class="grid-button">
+          <div class="grid-button">
+            <img
+              src="https://environment-data-viz.s3-us-west-1.amazonaws.com/assets/jong-marshes-79mNMAvSORg-unsplash.jpg"
+              alt="water" />
+            <a href="#jaime">Water: A Two-Sided Coin</a>
+          </div>
+        </div>
+        <!-- Short introduction to project -->
+      </div>
     </div>
-    </section>
+  </section>
   <section id="alex">
-    <div class="w" style="width: 90%;">
+    <div class="w">
       <!-- Add Alex's visualizations/insights -->
       <h1>CO2 Emissions</h1>
       <h2>Background</h2>
@@ -41,9 +67,13 @@
       <h3>Example Insights</h3>
       <div>
         <h4>Viz 1</h4>
-        <p>Primary Insight: The China has become the highest contributor to global CO2 emissions since the year 2000, followed by the United States and India</p>
-        <p>Secondary Insight: Overall, CO2 emissions have been increasing over time.</p>
-        <p>Third Insight: What is the overall trend in CO2 emissions over time for all countries?</p>
+        <p>Primary Insight: The China has become the highest
+          contributor to global CO2 emissions since the year 2000,
+          followed by the United States and India</p>
+        <p>Secondary Insight: Overall, CO2 emissions have been
+          increasing over time.</p>
+        <p>Third Insight: What is the overall trend in CO2 emissions
+          over time for all countries?</p>
         <h4>What Abstraction</h4>
         <li>Data Type: temporal</li>
         <li>Dataset Availability: static</li>
@@ -57,23 +87,31 @@
         <li>Attribute Type: categorical</li>
         <li>Ordering Direction: sequential</li>
         <h4>Why Abstraction</h4>
-        <li>Alex_T1: Summarize trends of CO2 emissions for every country.</li>
-        <li>Alex_T2: Summarize trends of CO2 emissions for every country.</li>
-        <li>Alex_T3: Summarize trends of CO2 emissions for every country.</li>
+        <li>Alex_T1: Summarize trends of CO2 emissions for every
+          country.</li>
+        <li>Alex_T2: Summarize trends of CO2 emissions for every
+          country.</li>
+        <li>Alex_T3: Summarize trends of CO2 emissions for every
+          country.</li>
         <h4>How Abstraction</h4>
         <h5>Marks</h5>
-        <li>Line: represents relationship between CO2 emissions and time.</li>
+        <li>Line: represents relationship between CO2 emissions and
+          time.</li>
         <h5>Channel</h5>
-        <li>Position, vertical: represents the quantity of CO2 emissions.</li>
+        <li>Position, vertical: represents the quantity of CO2
+          emissions.</li>
         <li>Color: represents every country.</li>
         <h5>Encoding</h5>
-        <li>Arrange, express: lines are drawn out across the graph.</li>
+        <li>Arrange, express: lines are drawn out across the
+          graph.</li>
         <li>Map, color hue: color represents country.</li>
         <h4>Viz 2</h4>
-        <p>Primary Insight: For the top three CO2 emitting countries, coal production contributes the most to CO2 emissions out of 
+        <p>Primary Insight: For the top three CO2 emitting countries,
+          coal production contributes the most to CO2 emissions out of
           gas, petroleum, and nuclear and other.
         </p>
-        <p>Secondary Insight: There is a positive correlation between energy production and CO2 emissions over time.</p>
+        <p>Secondary Insight: There is a positive correlation between
+          energy production and CO2 emissions over time.</p>
         <h4>What Abstraction</h4>
         <li>Data Type: temporal</li>
         <li>Dataset Availability: static</li>
@@ -93,25 +131,36 @@
         <li>Attribute Type: categorical</li>
         <li>Ordering Direction: sequential</li>
         <h4>Why Abstraction</h4>
-        <li>Alex_T4: Compare the distributions of energy production with the trend of CO2 emissions for each country.</li>
-        <li>Alex_T5: Compare the trends of total energy production and CO2 emissions over time for each country.</li>
+        <li>Alex_T4: Compare the distributions of energy production
+          with the trend of CO2 emissions for each country.
+        </li>
+        <li>Alex_T5: Compare the trends of total energy production and
+          CO2 emissions over time for each country.</li>
         <h4>How Abstraction</h4>
         <h5>Marks</h5>
-        <li>Line: represents relationship between CO2 emissions and energy production and time.</li>
+        <li>Line: represents relationship between CO2 emissions and
+          energy production and time.</li>
         <li>Area: represents the quantity of energy production.</li>
         <h5>Channel</h5>
-        <li>Position, vertical: represents the quantity of CO2 emissions.</li>
+        <li>Position, vertical: represents the quantity of CO2
+          emissions.</li>
         <li>Color: represents every energy type.</li>
         <li>Area: represents the quantity of energy production.</li>
         <h5>Encoding</h5>
-        <li>Arrange, express: lines and areas are drawn out across the graph.</li>
-        <li>Arrange, align: align chart of CO2 and energy type next to each other.</li>
+        <li>Arrange, express: lines and areas are drawn out across the
+          graph.</li>
+        <li>Arrange, align: align chart of CO2 and energy type next to
+          each other.</li>
         <li>Map, color hue: color represents energy type.</li>
-        <li>Facet, juxtapose: juxtapose CO2 chart and energy production chart for every country.</li>
+        <li>Facet, juxtapose: juxtapose CO2 chart and energy
+          production chart for every country.</li>
         <h4>Viz 3</h4>
-        <p>Primary Insight: The United States and China have reduced their coal production since 2005, while India has slightly increased it.</p>
-        <p>Secondary Insight: China has increased its nuclear production to replace coal and petroleum, and India has increased 
-          its nuclear production to replace gas and petroleum.
+        <p>Primary Insight: The United States and China have reduced
+          their coal production since 2005, while India has slightly
+          increased it.</p>
+        <p>Secondary Insight: China has increased its nuclear
+          production to replace coal and petroleum, and India has
+          increased its nuclear production to replace gas and petroleum.
         </p>
         <h4>What Abstraction</h4>
         <li>Data Type: temporal</li>
@@ -122,13 +171,16 @@
         <h5>Percent</h5>
         <li>Attribute Type: quantitative</li>
         <li>Ordering Direction: sequential</li>
-        <li>Derrived Attribute: mapped energy production quantities to percents out of 100.</li>
+        <li>Derrived Attribute: mapped energy production quantities to
+          percents out of 100.</li>
         <h5>Country</h5>
         <li>Attribute Type: categorical</li>
         <li>Ordering Direction: sequential</li>
         <h4>Why Abstraction</h4>
-        <li>Alex_T6: Summarize trends of energy production for every country.</li>
-        <li>Alex_T7: Summarize trends of energy production for every country.</li>
+        <li>Alex_T6: Summarize trends of energy production for every
+          country.</li>
+        <li>Alex_T7: Summarize trends of energy production for every
+          country.</li>
         <h4>How Abstraction</h4>
         <h5>Marks</h5>
         <li>Area: represents percentage of energy production.</li>
@@ -136,54 +188,65 @@
         <li>Area: represents the quantity of energy production.</li>
         <li>Color: represents every energy type.</li>
         <h5>Encoding</h5>
-        <li>Arrange, align: align country charts next to one another for comparison.</li>
+        <li>Arrange, align: align country charts next to one another
+          for comparison.</li>
         <li>Facet, juxtapose: juxtapose every country's chart.</li>
         <li>Map, color hue: color represents energy type.</li>
       </div>
       <h3>Process</h3>
-      <p>In this section, I display the process of coming up with my final visualizations.</p>
+      <p>In this section, I display the process of coming up with my
+        final visualizations.</p>
       <h4>Energy Production Over Time</h4>
-      <p>For this visualization, I originally tried creating a bar chart for each country, and having a user input scroll bar to 
-        choose what year the bar charts represented. The idea was to convey how the distributions of energy types changed over time.
+      <p>For this visualization, I originally tried creating a bar
+        chart for each country, and having a user input scroll bar to
+        choose what year the bar charts represented. The idea was to
+        convey how the distributions of energy types changed over time.
       </p>
       <div id="observablehq-viewof-distributionYear-d25631b5"></div>
-<div id="observablehq-viewof-energyDistributions-d25631b5"></div>
+      <div id="observablehq-viewof-energyDistributions-d25631b5"></div>
 
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
-new Runtime().module(define, name => {
-  if (name === "viewof distributionYear") return new Inspector(document.querySelector("#observablehq-viewof-distributionYear-d25631b5"));
-  if (name === "viewof energyDistributions") return new Inspector(document.querySelector("#observablehq-viewof-energyDistributions-d25631b5"));
-  return ["getData","energyDistributions","getEnergyViz","energyAndCo2Plot"].includes(name);
-});
-</script>
-      <p>The issue with this visualization is that it did not effectively show how the distributions changed over time. I ended up 
-        using area charts for each country to show the distributions of energy production over time.
+      <script type="module">
+        import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "viewof distributionYear") return new Inspector(document.querySelector("#observablehq-viewof-distributionYear-d25631b5"));
+          if (name === "viewof energyDistributions") return new Inspector(document.querySelector("#observablehq-viewof-energyDistributions-d25631b5"));
+          return ["getData", "energyDistributions", "getEnergyViz", "energyAndCo2Plot"].includes(name);
+        });
+      </script>
+      <p>The issue with this visualization is that it did not
+        effectively show how the distributions changed over time. I
+        ended up using area charts for each country to show the
+        distributions of energy production over time.
       </p>
       <h4>What contributes to CO2 emissions.</h4>
-      <p>In this visualization, I wanted to show which energy types contributed most to CO2 emissions. I attempted to do this by 
-        normalizing the data by calculating the standard deviations of CO2 and all of the energy types.</p>
-        <div id="observablehq-viewof-stdLineChart-c20ea3d7"></div>
+      <p>In this visualization, I wanted to show which energy types
+        contributed most to CO2 emissions. I attempted to do this by
+        normalizing the data by calculating the standard deviations of
+        CO2 and all of the energy types.</p>
+      <div id="observablehq-viewof-stdLineChart-c20ea3d7"></div>
 
 
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
-new Runtime().module(define, name => {
-  if (name === "viewof stdLineChart") return new Inspector(document.querySelector("#observablehq-viewof-stdLineChart-c20ea3d7"));
-});
-</script>
-      <p>This issue with this visualization was that there was no clear way to interpret the fluctuations in the lines since 
-        my unit was a standard deviation. I ended up displaying CO2 emissions and the distributions of energy types next to each other 
-        so one could compare them.
+      <script type="module">
+        import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "viewof stdLineChart") return new Inspector(document.querySelector("#observablehq-viewof-stdLineChart-c20ea3d7"));
+        });
+      </script>
+      <p>This issue with this visualization was that there was no
+        clear way to interpret the fluctuations in the lines since my
+        unit was a standard deviation. I ended up displaying CO2
+        emissions and the distributions of energy types next to each
+        other so one could compare them.
       </p>
       <h3>Exploration
       </h3>
-      <p>In this section, we will beging the exploration of CO2 emissions using the final visualizations that I created.
-        First, let's check out how CO2 emissions have been changing
-        over the years for a select few countries: China, United States,
-        Canada, Japan, Iran, and India. We are focusing in on these six
+      <p>In this section, we will beging the exploration of CO2
+        emissions using the final visualizations that I created. First,
+        let's check out how CO2 emissions have been changing over the
+        years for a select few countries: China, United States, Canada,
+        Japan, Iran, and India. We are focusing in on these six
         countries because they are some of the highest CO2 emitting
         countries in the world.
         <li>Which country has become the leader in CO2 emissions in
@@ -191,66 +254,89 @@ new Runtime().module(define, name => {
         <li>Which three countries have been the highest CO2 emitting
           countries since the early 2000s?</li>
         <li>What is the overall trend in CO2 emissions over time for
-        all countries?</li>
+          all countries?</li>
       </p><br>
-      <p style="font-size: 30px;">China has Become the Leader in CO2 Emissions in Recent Years</p>
+      <p style="font-size: 30px;">China has Become the Leader in CO2
+        Emissions in Recent Years</p>
       <p>The y-axis displays CO2 emissions in Tonnes of CO2.</p>
       <div id="observablehq-viewof-lineChartCO2-87a8b234"></div>
-<p>Credit: <a href="https://observablehq.com/@akaufmann038/home-page">By Alexander Kaufmann</a></p>
-<p>Data: <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">OurWorldInData.org</a></p>
+      <p>Credit: <a href="https://observablehq.com/@akaufmann038/home-page">By
+          Alexander Kaufmann</a></p>
+      <p>Data: <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions">OurWorldInData.org</a></p>
 
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
-new Runtime().module(define, name => {
-  if (name === "viewof lineChartCO2") return new Inspector(document.querySelector("#observablehq-viewof-lineChartCO2-87a8b234"));
-});
-</script>
-<br>
-      <p>Next, we will look at CO2 emissions and energy production over time for the top three CO2 emitting countries.
-        <li>Which energy type contributes the most to CO2 emissions?</li>
-        <li>Is there a relationship between CO2 emissions and energy production over time for each country? What is it?</li>
+      <script type="module">
+        import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "viewof lineChartCO2") return new Inspector(document.querySelector("#observablehq-viewof-lineChartCO2-87a8b234"));
+        });
+      </script>
+      <br>
+      <p>Next, we will look at CO2 emissions and energy production
+        over time for the top three CO2 emitting countries.
+        <li>Which energy type contributes the most to CO2
+          emissions?</li>
+        <li>Is there a relationship between CO2 emissions and energy
+          production over time for each country? What is it?
+        </li>
       </p>
-      <p style="font-size: 30px;">Coal Production Contributes the Most to CO2 Emissions</p>
-      <p>The y-axis dispays CO2 emissions in Tonnes of CO2 and Energy Production in Quant BTU. The graphs on the left are 
-        plotting CO2 data, while the graphs on the right are plotting energy production data.
+      <p style="font-size: 30px;">Coal Production Contributes the Most
+        to CO2 Emissions</p>
+      <p>The y-axis dispays CO2 emissions in Tonnes of CO2 and Energy
+        Production in Quant BTU. The graphs on the left are plotting CO2
+        data, while the graphs on the right are plotting energy
+        production data.
       </p>
       <div id="observablehq-viewof-energyAndCo2Plot-e47b2456"></div>
-<p>Credit: <a href="https://observablehq.com/@akaufmann038/home-page">By Alexander Kaufmann</a></p>
-<p>Data: <a href="https://www.eia.gov/international/data/country/CHN/total-energy/total-energy-production?pd=44&p=004000000000000000000000000000000000000000000000000000000f00o&u=0&f=A&v=mapbubble&a=-&i=none&vo=value&&t=C&g=none&l=249--38&s=315532800000&e=1514764800000">EIA.gov</a></p>
-
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
-new Runtime().module(define, name => {
-  if (name === "viewof energyAndCo2Plot") return new Inspector(document.querySelector("#observablehq-viewof-energyAndCo2Plot-e47b2456"));
-});
-</script>
-<br>
-      <p>Finally, let's look at how the top three CO2 emitting countries have been
-      changing their energy production patterns over time.
-        <li>In the most recent years, how has coal production changed for each country?</li>
-        <li>What countries have been increasing their "nuclear and other" energy?</li>
+      <p>Credit: <a href="https://observablehq.com/@akaufmann038/home-page">By
+          Alexander Kaufmann</a></p>
+      <p>Data: <a
+          href="https://www.eia.gov/international/data/country/CHN/total-energy/total-energy-production?pd=44&p=004000000000000000000000000000000000000000000000000000000f00o&u=0&f=A&v=mapbubble&a=-&i=none&vo=value&&t=C&g=none&l=249--38&s=315532800000&e=1514764800000">EIA.gov</a>
       </p>
-      <p style="font-size: 30px;">China and the United States have decreased their coal production in recent years.</p>
-      <p>The y-axis displays the percent of an energy type out of total energy production. The color areas represent the percentage 
-        of the energy types. For a specific moment in time, the width of the color areas represent the current percentage.
+
+      <script type="module">
+        import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "viewof energyAndCo2Plot") return new Inspector(document.querySelector("#observablehq-viewof-energyAndCo2Plot-e47b2456"));
+        });
+      </script>
+      <br>
+      <p>Finally, let's look at how the top three CO2 emitting
+        countries have been changing their energy production patterns
+        over time.
+        <li>In the most recent years, how has coal production changed
+          for each country?</li>
+        <li>What countries have been increasing their "nuclear and
+          other" energy?</li>
+      </p>
+      <p style="font-size: 30px;">China and the United States have
+        decreased their coal production in recent years.</p>
+      <p>The y-axis displays the percent of an energy type out of
+        total energy production. The color areas represent the
+        percentage of the energy types. For a specific moment in time,
+        the width of the color areas represent the current percentage.
       </p>
       <div id="observablehq-viewof-percentDist-8f1e7cba"></div>
-<p>Credit: <a href="https://observablehq.com/@akaufmann038/home-page">By Alexander Kaufmann</a></p>
-<p>Data: <a href="https://www.eia.gov/international/data/country/CHN/total-energy/total-energy-production?pd=44&p=004000000000000000000000000000000000000000000000000000000f00o&u=0&f=A&v=mapbubble&a=-&i=none&vo=value&&t=C&g=none&l=249--38&s=315532800000&e=1514764800000">EIA.gov</a></p>
+      <p>Credit: <a href="https://observablehq.com/@akaufmann038/home-page">By
+          Alexander Kaufmann</a></p>
+      <p>Data: <a
+          href="https://www.eia.gov/international/data/country/CHN/total-energy/total-energy-production?pd=44&p=004000000000000000000000000000000000000000000000000000000f00o&u=0&f=A&v=mapbubble&a=-&i=none&vo=value&&t=C&g=none&l=249--38&s=315532800000&e=1514764800000">EIA.gov</a>
+      </p>
 
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
-new Runtime().module(define, name => {
-  if (name === "viewof percentDist") return new Inspector(document.querySelector("#observablehq-viewof-percentDist-8f1e7cba"));
-});
-</script>
-<p>Video Explanation: https://www.youtube.com/watch?v=8w3e3Ejtc1w
-</p>
-<p>Usability Test 1: Too long to upload to YouTube</p>
-<p>Usability Test 2: https://www.youtube.com/watch?v=8NDmBd9w6VA</p>
+      <script type="module">
+        import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@akaufmann038/final-project.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "viewof percentDist") return new Inspector(document.querySelector("#observablehq-viewof-percentDist-8f1e7cba"));
+        });
+      </script>
+      <p>Video Explanation:
+        https://www.youtube.com/watch?v=8w3e3Ejtc1w
+      </p>
+      <p>Usability Test 1: Too long to upload to YouTube</p>
+      <p>Usability Test 2:
+        https://www.youtube.com/watch?v=8NDmBd9w6VA</p>
     </div>
   </section>
   <section id="tatum">
@@ -260,44 +346,54 @@ new Runtime().module(define, name => {
         <h1>Forests and Deforestation</h1>
         <h3>Background</h3>
         <p>
-          Much of the world's landamass is covered by forest. Forests account for 38% of all habitable land.
-          That is over one-third of habitable land and around one qarter of the total landmass on this planet!
-          This is a signinfant decrease from what it used to be. Currently half of all habitable land is used for
-          agriculture.
+          Much of the world's landamass is covered by forest. Forests
+          account for 38% of all habitable land. That is over
+          one-third of habitable land and around one qarter of the
+          total landmass on this planet! This is a signinfant decrease
+          from what it used to be. Currently half of all habitable
+          land is used for agriculture.
           <a href="https://ourworldindata.org/forest-area">OurWorldInData</a>
         </p>
 
         <h3>Net Forestation Changes</h3>
         <p>
-          Lets try to understand that decrease. We can think of forestation in terms of deforestation
-          (loss of forest) and afforestation (gain of forest).
-          Afforestation includes both natural forest expansion and supernatural expansion at the hands of humans.
-          Thus, net forest change is not the same as defortestation,
-          it inlcudes both losses and gains. Here we can see the net changes in forest cover from 1990 to 2015.
-          Countries shown in yellow have experienced net deforestation, countires shown in blue have experienced net
+          Lets try to understand that decrease. We can think of
+          forestation in terms of deforestation (loss of forest) and
+          afforestation (gain of forest). Afforestation includes both
+          natural forest expansion and supernatural expansion at the
+          hands of humans. Thus, net forest change is not the same as
+          defortestation, it inlcudes both losses and gains. Here we
+          can see the net changes in forest cover from 1990 to 2015.
+          Countries shown in yellow have experienced net
+          deforestation, countires shown in blue have experienced net
           afforestation.
         </p>
-       
-        <p style="font-size: 30px;">Brazil has experienced the most deforestation. China has experienced the most afforestation.</p>
 
-        <p>Despite afforestation in some regions, it is not enough to make up for the loss of forest elsewhere. 
-          If we want to preserve this natural rescource changes to our current agricultrual practices will need to be made.</p>
+        <p style="font-size: 30px;">Brazil has experienced the most
+          deforestation. China has experienced the most
+          afforestation.</p>
+
+        <p>Despite afforestation in some regions, it is not enough to
+          make up for the loss of forest elsewhere. If we want to
+          preserve this natural rescource changes to our current
+          agricultrual practices will need to be made.</p>
 
         <div id="observablehq-l-c012e4c8"></div>
         <div id="observablehq-chart-c012e4c8"></div>
-        <p>Credit: <a href="https://observablehq.com/@twhitehead00/deforestation-data-viz">Changes in Forestation 1990 -
-            2015 by Tatum</a></p>
+        <p>Credit: <a href="https://observablehq.com/@twhitehead00/deforestation-data-viz">Changes
+            in Forestation 1990 - 2015 by Tatum</a></p>
         <p>Data: <a href="https://fra-data.fao.org/WO/assessment/fra2020">OurWorldInData</a></p>
 
-        <p>Here we can see the cumulitive percent change in forestation for the nations most affected by change. </p>
+        <p>Here we can see the cumulitive percent change in
+          forestation for the nations most affected by change. </p>
 
         <div id="observablehq-viewof-metric-538c9937"></div>
         <div id="observablehq-chart-538c9937"></div>
-        <p>Credit: <a href="https://observablehq.com/@twhitehead00/changes-in-forestation-1990-2015">Changes in
-            Forestation 1990 - 2015 by Tatum</a></p>
+        <p>Credit: <a href="https://observablehq.com/@twhitehead00/changes-in-forestation-1990-2015">Changes
+            in Forestation 1990 - 2015 by Tatum</a></p>
         <p>Data: <a href="https://fra-data.fao.org/WO/assessment/fra2020">OurWorldInData</a></p>
 
-        
+
 
 
         <script type="module">
@@ -322,31 +418,42 @@ new Runtime().module(define, name => {
 
         <h3>Forest Distribution</h3>
 
-        <p>Below we can see the total change in forest distribution expereinced by the most forested nations from 1990 to 2020. This helps us gain a better idea of 
-          where deforestation and afforestation is occuring so we can take a deeper look into the happenings in these regions. 
+        <p>Below we can see the total change in forest distribution
+          expereinced by the most forested nations from 1990 to 2020.
+          This helps us gain a better idea of where deforestation and
+          afforestation is occuring so we can take a deeper look into
+          the happenings in these regions.
 
-          <li><i>note that some data may be double counted, for example the feild Asia includes data from China although China is also seen independently on the chart</i></li>
+          <li><i>note that some data may be double counted, for
+              example the feild Asia includes data from China although
+              China is also seen independently on the chart</i></li>
         </p>
 
         <div id="observablehq-chart-5f9bcd1f"></div>
-        <p>Credit: <a href="https://observablehq.com/@twhitehead00/horizontal-bar-chart">Forest distribution accross
-            regions by Tatum</a></p>
+        <p>Credit: <a href="https://observablehq.com/@twhitehead00/horizontal-bar-chart">Forest
+            distribution accross regions by Tatum</a></p>
         <p>Data: <a href="https://ourworldindata.org/deforestation">OurWorldInData</a></p>
 
 
 
-        
-        <p>Below we can see the distribution of forest area across regions of the globe. The bubble visualizations are not that insightful but they were
-          difficult to make and I leared a lot in the process of doing so. They are included to demonstrate the exploratory process of this project.
-           
+
+        <p>Below we can see the distribution of forest area across
+          regions of the globe. The bubble visualizations are not that
+          insightful but they were difficult to make and I leared a lot
+          in the process of doing so. They are included to demonstrate
+          the exploratory process of this project.
+
         </p>
 
 
-        <p style="font-size: 30px;">Russia is home to the world's largest forest.</p>
+        <p style="font-size: 30px;">Russia is home to the world's
+          largest forest.</p>
         <p>Many think the Amazon in brazil is the largest forest.</p>
 
-        <p style="font-size: 30px;"> Brazil, the United States, Canada, China, Australia, 
-          and the Democratic Republic of Congo also contain a significant chunk of the global forest area.</p>
+        <p style="font-size: 30px;"> Brazil, the United States,
+          Canada, China, Australia, and the Democratic Republic of Congo
+          also contain a significant chunk of the global forest
+          area.</p>
         <h4>Forest distribution accross regions 2020</h4>
         <script type="module">
           import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -356,8 +463,8 @@ new Runtime().module(define, name => {
           });
         </script>
         <div id="observablehq-chart20-03c1aa07"></div>
-        <p>Credit: <a href="https://observablehq.com/@twhitehead00/bubble-chart">Forest distribution accross regions by
-            Tatum</a></p>
+        <p>Credit: <a href="https://observablehq.com/@twhitehead00/bubble-chart">Forest
+            distribution accross regions by Tatum</a></p>
         <p>Data: <a href="https://ourworldindata.org/deforestation">OurWorldInData</a></p>
 
         <script type="module">
@@ -370,10 +477,10 @@ new Runtime().module(define, name => {
 
 
         <h4>Forest distribution accross regions 1990</h4>
-  
+
         <div id="observablehq-chart90-03c1aa07"></div>
-        <p>Credit: <a href="https://observablehq.com/@twhitehead00/bubble-chart">Forest distribution accross regions by
-            Tatum</a></p>
+        <p>Credit: <a href="https://observablehq.com/@twhitehead00/bubble-chart">Forest
+            distribution accross regions by Tatum</a></p>
         <p>Data: <a href="https://ourworldindata.org/deforestation">OurWorldInData</a></p>
 
         <script type="module">
@@ -385,9 +492,10 @@ new Runtime().module(define, name => {
         </script>
 
         <p>
-          We can see the shares of forest area accross world regions. We see that Europe, thanks to Russia,
-          has the largest share of global forest area. This is followed by South America and then Africa.
-          This has not changed over the past 30 years.
+          We can see the shares of forest area accross world regions.
+          We see that Europe, thanks to Russia, has the largest share
+          of global forest area. This is followed by South America and
+          then Africa. This has not changed over the past 30 years.
         </p>
 
 
@@ -396,7 +504,17 @@ new Runtime().module(define, name => {
   </section>
   <section id="jaime">
     <div class="w">
-      <h1>The State of Water</h1>
+      <h1>Water: A Two-Sided Coin</h1>
+      <p><i>Jaime Kvaternik</i></p>
+      <span>
+        <b>Resources:</b>
+      </span>
+      <ul>
+        <li>
+          <a href="https://observablehq.com/@jkvaternik/water-a-two-sided-coin">Observable Notebook</a>
+        </li>
+      </ul>
+        
       <h3>Background</h3>
       <p>The effects of climate change and unsustainable use can be
         found in our oceans, lakes, and rivers. While water is essential
@@ -404,55 +522,187 @@ new Runtime().module(define, name => {
         mass sinking coupled with rising sea levels can be the end of
         many coastal cities. Yet at the same time, freshwater resources
         have become scarce due to unsustainable water usage combined
-        with the booming path of human population. How bad is it? Let’s
-        look at the data.</p>
+        with the booming trend of human population. The following
+        sections look at the effects created by rising sea levels as
+        well as the results of human water consumption.</p>
       <div>
-        <h3>Sea Levels</h3>
-        <p>It's been made publicly aware by scientists that sea levels
-        are on the rise due to global warming. But how fast is the sea
-        level rising?</p>
+        <h3>Part I: Ports vs. Rising Sea Levels</h3>
+        <p>With a growing human population and increasing
+          temperatures, sea levels have been rising at an increasing
+          rate since the early 1900s. The following visualization
+          presents sea level data collected from CSIRO (Commonwealth
+          Scientific and Industrial Research Organisation).</p>
         <iframe width="100%" height="684" frameborder="0"
-        src="https://observablehq.com/embed/c88624e55f2ef23f?cells=sealevels_chart"></iframe>
-        <p>So how do these sea levels affect us? Specifically, let's
-          look at the production of seafood in the United States. The
-          following visualization displays the revenue of major US ports
-          in millions of dollars. If we assumed a certain sea level
-          change, would the port be unusuable due to rise in sea level?
-          Which sea levels will affect the sea industry the most?
+          src="https://observablehq.com/embed/@jkvaternik/water-a-two-sided-coin?cells=sealevels_chart"></iframe>
+        <p>
+          <b>Dataset:</b>
+          <a href="https://datahub.io/core/sea-level-rise">Global Average Absolute Sea Level Change, 1880-2014</a>
+        </p>
+        <p>
+          Coupled with the sinking of land masses, rising sea-levels
+          have the potential of flooding multiple cities and impacting
+          the seafood economy. Here we can look at how rising sea levels
+          could flood cities and surrounding major ports — leaving them
+          unable to function.
+
+          Researchers and scientists have warned about the
+          consequences of global warming towards rising sea levels.
+          According to a study by Scott A. Kulp and Benjamin H. Strauss,
+          sea levels are projected to rise by 2 meters at the end of
+          the twenty-first century under high carbon emissions. How
+          would this affect major U.S. ports? Who would be
+          affected? The following visualization displays the revenue of
+          major US ports in millions of dollars. If we assumed a
+          certain sea level change, would the port be unusuable due to
+          rise in sea level? Which sea levels will affect the sea
+          industry the most?
         </p>
         <iframe width="100%" height="734" frameborder="0"
-          src="https://observablehq.com/embed/c88624e55f2ef23f?cells=viewof+elevation_gain%2Cseafood_chart"></iframe>
+          src="https://observablehq.com/embed/@jkvaternik/water-a-two-sided-coin?cells=viewof+elevation_gain%2Cseafood_chart"></iframe>
+        
+        <p>
+          <b>Datasets:</b>
+          <a href="https://www.fisheries.noaa.gov/foss/f?p=215:200:2247763525368::NO:::">NOAA Fisheries Top US Ports Dataset</a>,
+          <a href="https://apps.nationalmap.gov/viewer/">USGS Topagraphy</a>
+        </p>
+        <p>
+          At the 2 meters suggested by Kulp and Strauss, the U.S.
+          loses roughly $472.2 million due to the instability of these
+          regions caused by rising sea levels. Additionally, even with
+          sharp, immediate cuts to carbon emissions, it could rise
+          another 0.5 m this century — jeopardizing $192.1 million of
+          the seafood economy. This could only worsen as the same
+          circumstances would extend to other countries as well —
+          impacting the global seafood chain.This issue will require
+          innovative solutions to mitigate our effect on increasing
+          temperatures and increasing sea levels to maintain
+          communities and economies afloat.
+        </p>
       </div>
       <div>
         <h3>Water Use</h3>
-        <p>Water is a two-sided coin. While mass bodies of water have the potential of flooding ports and cities, we
-          also need freshwater access to survive. Yet, due to human overpopulation, water scarcity has become more of an
-          issue. In recent years, South Africa was noticed of Day Zero, a response to their water crisis. Unless water
-          consumption patterns changed, scientists predicted that the countries freshwater supply would end. Water
-          scarcity is an issue all over the globe and not just in South Africa. So we must ask ourselves, who has the
-          most sustainable water consumption?</p>
-        <iframe width="100%" height="1001" frameborder="0"
-          src="https://observablehq.com/embed/c88624e55f2ef23f?cells=viewof+selected%2Cfreshwater_chart"></iframe>
+        <p>Water is a two-sided coin. While mass bodies of water have
+          the potential of flooding ports and cities, we also need
+          freshwater access to survive. Yet, due to growing human
+          populations, water scarcity has become more of an issue. In
+          recent years, South Africa was warned of Day Zero, a response
+          to their water crisis in 2018. Unless water consumption
+          patterns changed, scientists predicted that the countries
+          freshwater supply would end. However, this water crisis
+          extends farther than South Africa, as 5.0 of 9.7
+          billion people (or 52% of the global population) in the world
+          will be living in water stressed regions by 2050. So, which
+          regions are currently experiencing higher levels of water stress?</p>
+        <iframe width="100%" height="608" frameborder="0"
+          src="https://observablehq.com/embed/@jkvaternik/water-a-two-sided-coin?cells=chart_legend%2Cwater_stress_chart"></iframe>
+          <p>
+            <b>Dataset:</b>
+            <a href="https://www.sdg6data.org/tables">UN — Level of water stress: freshwater withdrawal as a proportion of available freshwater resources</a>
+          </p>
+        <p>
+          Many countries with a high freshwater withdrawal of
+          available freshwater resources are located in arid regions,
+          which leads to the question — what can be done? The global
+          water crisis is a global problem and requires the assistance
+          of each individual. One solution is reducing a us Well the
+          problem doesn't just lie there. Using this information,
+          let's turn to global water withdrawal rates to see which
+          countries need to change their water consumption patterns to
+          avoid running out of water.
+        </p>
+        <iframe width="100%" height="684" frameborder="0"
+          src="https://observablehq.com/embed/@jkvaternik/water-a-two-sided-coin?cells=freshwater_chart"></iframe>
+          <p>
+            <b>Datasets:</b>
+            <a href="https://www.sdg6data.org/tables">UN — Total water withdrawal per capita</a>,
+            <a href="https://www.sdg6data.org/tables">UN — Gross domestic product (GDP), per capita (USD)</a>
+          </p>
+        <p>
+          In the visualization above, countries are mapped by their
+          annual total water withdrawal per person in cubic meters by
+          their respective GDP per capita. The sustainable freshwater
+          withdrawal benchmark was suggested by Arjen Hoekstra, a
+          reknowned professor of water management at the University of
+          Twente, Enschede, the Netherlands based on projected
+          population grown and available water resources.
 
+          Now, let's add another measure: a GDP benchmark for developing
+          countries to see which if more developing countries or developed
+          countries support an unsustainable water consumption:
+        </p>
+        <iframe width="100%" height="684" frameborder="0"
+          src="https://observablehq.com/embed/@jkvaternik/water-a-two-sided-coin?cells=freshwater_chart_developing"></iframe>
+        <p>
+          Interestingly, there are more developed countries with
+          unsustainable water consumption patterns than developing
+          countries. One possible reason is the consumer culture in
+          these countries. Our freshwater withdrawal consists of two
+          types of water; indirect and direct water consumption. While
+          water conservation tips such as taking shorter showers and
+          turning off running water while brushing your teeth or
+          washing the dishes aim to reduce direct consumption, it's
+          our indirect consumption that hinders our sustainable
+          efforts. Unhealthy, meat-heavy diets and consumerist
+          patterns are large perpetrators to our high water
+          consumption.
+
+          So, how do these countries fare with water scarcity? Are more
+          countries in water stressed conditions? Let's turn back to our global
+          visualization with a focus on these countries with unsustainable water
+          consumption patterns.
+        </p>
+        <iframe width="100%" height="608" frameborder="0"
+          src="https://observablehq.com/embed/@jkvaternik/water-a-two-sided-coin?cells=chart_legend%2Cunsustainable_water_chart"></iframe>
+        <p>While more developed countries have unsustainable water
+          consumption rates, those same countries do not appear to be
+          in high or critical water-stress conditions (&lt50%).
+          Unfortunately, these countries may not realize the
+          consequences of their actions yet, but could be in water
+          stress conditions based on their current trajectory. We can
+          also observe the water consumption and water stress
+          conditions of the countries with lower GDP versus higher GDP
+          in the next visualization.</p>
+        <iframe width="100%" height="1283" frameborder="0"
+          src="https://observablehq.com/embed/@jkvaternik/water-a-two-sided-coin?cells=viewof+gdp%2Cfreshwater_chart_developing_unsustainable%2Cchart_legend2%2Cdeveloping_unsustainable_water_chart"></iframe>
+        <p>Countries with lower GDP are typically in more stressed
+          water conditions (&gt50%) with the exception of Indonesia. Water
+          scarcity can have effects on a countries social and economic
+          health as water becomes more of a priority. Residents of these
+          regions must focus more on retrieving water rather than
+          economic or social productivity. However, through the help of
+          neighboring countries and the reduction of their water
+          consumption to a sustainable level, these regions could
+          benefit socially and economically.</p>
       </div>
     </div>
   </section>
 
   <section id="landing">
     <div class="w">
-      <div id="title">
+      <div>
         <h1 style="color: white; display: inline-block; margin-right:
         50px;">How to help</h1>
         <!-- Call to action, conclude project -->
-        <h4 style="color: white; display: inline-block">Small actions can have a big impact!</h4>
-        <p>
-          You as an indivual can effect real change. Here are some ideas to get you started:
-        <ul>
-          <li>Reduce meat from your diet - animal agirculture is a huge driver for deforestation</li>
-          <li>Unsunbrice from junk emails - saves a lot energy!</li>
-          <li>...</li>
-        </ul>
-        </p>
+        <h4 style="color: white; display: inline-block">Small actions
+          can have a big impact!</h4>
+        <div id="footer">
+          <p>
+            You as an indivual can effect real change. Here are some
+            ideas to get you started:
+          <ul>
+            <li>Reduce meat from your diet - animal agirculture is a
+              huge driver for deforestation</li>
+            <li>Unsubscribe from junk emails - saves a lot energy!</li>
+            <li>Reduce your water consumption by taking shorter showers, turning off running water, and fixing leaks</li>
+            <li>Optimize the wear of your clothes to reduce water consumption in washing cycles</li>
+            <li>Calculate your water footprint to learn more about your indirect water use and areas to change to improve sustainability!
+              <ul>
+                <li><a href="https://www.watercalculator.org" style="color:#505255">Water Footprint Calculator</a></li>
+              </ul>
+            </li>
+          </ul>
+          </p>
+        </div>
       </div>
 
     </div>
