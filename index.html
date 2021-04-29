@@ -352,7 +352,6 @@
           total landmass on this planet! This is a signinfant decrease
           from what it used to be. Currently half of all habitable
           land is used for agriculture.
-          <a href="https://ourworldindata.org/forest-area">OurWorldInData</a>
         </p>
 
         <h3>Net Forestation Changes</h3>
@@ -362,49 +361,41 @@
           afforestation (gain of forest). Afforestation includes both
           natural forest expansion and supernatural expansion at the
           hands of humans. Thus, net forest change is not the same as
-          defortestation, it inlcudes both losses and gains. Here we
-          can see the net changes in forest cover from 1990 to 2015.
-          Countries shown in yellow have experienced net
-          deforestation, countires shown in blue have experienced net
-          afforestation.
+          defortestation, it inlcudes both losses and gains. 
         </p>
+
+        
+
+        <p>Despite afforestation in some regions, it is not enough to
+          make up for the loss of forest elsewhere. If we want to
+          preserve this natural rescource changes to our current
+          agricultrual practices will need to be made.
+        </p>
+
+        <p>This map shows the net changes to forestation across the world during 1990 - 2015 in hectares. Net change in hectares is encoded in color. 
+          Nation is encoded using its geographical position. Countries shown in yellow have experienced net deforestation, countires shown in blue have experienced net
+          afforestation.</p>
+
+
+        <h4>Changes to forestation (hectares) 1990 - 2015</h4>
+        <div id="observablehq-l-c012e4c8"></div>
+        <div id="observablehq-chart-c012e4c8"></div>
+  
+        <p><b>Dataset: <a href="https://fra-data.fao.org/WO/assessment/fra2020">OurWorldInData</a></b></p>
 
         <p style="font-size: 30px;">Brazil has experienced the most
           deforestation. China has experienced the most
           afforestation.</p>
 
-        <p>Despite afforestation in some regions, it is not enough to
-          make up for the loss of forest elsewhere. If we want to
-          preserve this natural rescource changes to our current
-          agricultrual practices will need to be made.</p>
-
-        <div id="observablehq-l-c012e4c8"></div>
-        <div id="observablehq-chart-c012e4c8"></div>
-        <p>Credit: <a href="https://observablehq.com/@twhitehead00/deforestation-data-viz">Changes
-            in Forestation 1990 - 2015 by Tatum</a></p>
-        <p>Data: <a href="https://fra-data.fao.org/WO/assessment/fra2020">OurWorldInData</a></p>
-
-        <p>Here we can see the cumulitive percent change in
-          forestation for the nations most affected by change. </p>
-
-        <div id="observablehq-viewof-metric-538c9937"></div>
-        <div id="observablehq-chart-538c9937"></div>
-        <p>Credit: <a href="https://observablehq.com/@twhitehead00/changes-in-forestation-1990-2015">Changes
-            in Forestation 1990 - 2015 by Tatum</a></p>
-        <p>Data: <a href="https://fra-data.fao.org/WO/assessment/fra2020">OurWorldInData</a></p>
+        <p> </p>
 
 
-
-
-        <script type="module">
-          import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-          import define from "https://api.observablehq.com/@twhitehead00/changes-in-forestation-1990-2015.js?v=3";
-          new Runtime().module(define, name => {
-            if (name === "viewof metric") return new Inspector(document.querySelector("#observablehq-viewof-metric-538c9937"));
-            if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-538c9937"));
-            return ["format", "tickFormat", "xAxis"].includes(name);
-          });
-        </script>
+        <p>
+          Here is another way to look at the map above. It shows the cumulitive percent change in
+          forestation for the nations most affected by change. The chart yeilds similar insights to the map above. I have included the link to demonstrate
+          the exploartoy process of creating these visualizations. It is not directly embedded out of concern for causing confusion.
+          <li><b><a href="https://observablehq.com/@twhitehead00/changes-in-forestation-1990-2015">Diverging Bar Chart</a></b></li>
+        </p>
 
         <script type="module">
           import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -418,43 +409,46 @@
 
         <h3>Forest Distribution</h3>
 
-        <p>Below we can see the total change in forest distribution
-          expereinced by the most forested nations from 1990 to 2020.
-          This helps us gain a better idea of where deforestation and
-          afforestation is occuring so we can take a deeper look into
-          the happenings in these regions.
-
+        <p>Below we can see the total forest distribution
+          for the most forested nations from 1990 to 2020.
+          
           <li><i>note that some data may be double counted, for
               example the feild Asia includes data from China although
               China is also seen independently on the chart</i></li>
         </p>
 
+        <h4>Global forest area (hectares) 1990 - 2020 for selected nations</h4>
         <div id="observablehq-chart-5f9bcd1f"></div>
-        <p>Credit: <a href="https://observablehq.com/@twhitehead00/horizontal-bar-chart">Forest
-            distribution accross regions by Tatum</a></p>
-        <p>Data: <a href="https://ourworldindata.org/deforestation">OurWorldInData</a></p>
+  
+        <p><b>Dataset:<a href="https://ourworldindata.org/deforestation">OurWorldInData</a></b></p>
 
 
 
 
         <p>Below we can see the distribution of forest area across
-          regions of the globe. The bubble visualizations are not that
-          insightful but they were difficult to make and I leared a lot
+          regions of the globe. 
+          
+          Bubble visualizations are on the design idioms I chose to explore for this because I found them visually appealing. They are not that
+          insightful & they were difficult to make. I leared a lot
           in the process of doing so. They are included to demonstrate
           the exploratory process of this project.
 
         </p>
+        <p><li><b><a href="https://observablehq.com/@twhitehead00/bubble-chart">Bubble Charts</a></b></li></p>
 
 
         <p style="font-size: 30px;">Russia is home to the world's
           largest forest.</p>
-        <p>Many think the Amazon in brazil is the largest forest.</p>
 
-        <p style="font-size: 30px;"> Brazil, the United States,
+          <p>It is home to one fifth of the world's forest area. Awareness of this is important if we want to preserve this great natural rescource.</p>
+
+        <p style="font-size: 20px;"> Brazil, the United States,
           Canada, China, Australia, and the Democratic Republic of Congo
           also contain a significant chunk of the global forest
           area.</p>
-        <h4>Forest distribution accross regions 2020</h4>
+
+     
+
         <script type="module">
           import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
           import define from "https://api.observablehq.com/@twhitehead00/horizontal-bar-chart.js?v=3";
@@ -463,40 +457,15 @@
           });
         </script>
         <div id="observablehq-chart20-03c1aa07"></div>
-        <p>Credit: <a href="https://observablehq.com/@twhitehead00/bubble-chart">Forest
-            distribution accross regions by Tatum</a></p>
-        <p>Data: <a href="https://ourworldindata.org/deforestation">OurWorldInData</a></p>
-
-        <script type="module">
-          import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-          import define from "https://api.observablehq.com/@twhitehead00/bubble-chart.js?v=3";
-          new Runtime().module(define, name => {
-            if (name === "chart20") return new Inspector(document.querySelector("#observablehq-chart20-03c1aa07"));
-          });
-        </script>
-
-
-        <h4>Forest distribution accross regions 1990</h4>
-
-        <div id="observablehq-chart90-03c1aa07"></div>
-        <p>Credit: <a href="https://observablehq.com/@twhitehead00/bubble-chart">Forest
-            distribution accross regions by Tatum</a></p>
-        <p>Data: <a href="https://ourworldindata.org/deforestation">OurWorldInData</a></p>
-
-        <script type="module">
-          import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-          import define from "https://api.observablehq.com/@twhitehead00/bubble-chart.js?v=3";
-          new Runtime().module(define, name => {
-            if (name === "chart90") return new Inspector(document.querySelector("#observablehq-chart90-03c1aa07"));
-          });
-        </script>
-
         <p>
           We can see the shares of forest area accross world regions.
           We see that Europe, thanks to Russia, has the largest share
           of global forest area. This is followed by South America and
           then Africa. This has not changed over the past 30 years.
         </p>
+
+
+        <p><li><b><a href="https://docs.google.com/document/d/1NHRUn70EYpXV0lw0Sn0Q5ktIxndkxxdF2hRHmcQkjPY/edit?usp=sharing">Usability Study</a></b></li></p>
 
 
 
