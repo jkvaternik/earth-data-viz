@@ -1,9 +1,9 @@
 # earth-data-viz
 
 # Links to Observable Notebooks:
-- Jaime Kvaternik : [Observable](https://observablehq.com/@jkvaternik/water-a-two-sided-coin)
-- Tatum Whitehead : [Observable](https://observablehq.com/@twhitehead00)
-- Alexander Kaufmann : [Observable](https://observablehq.com/@akaufmann038/final-project)
+- Jaime Kvaternik : [Water: A Two-Sided Coin](https://observablehq.com/@jkvaternik/water-a-two-sided-coin)
+- Tatum Whitehead : [Forestation and Deforestation](https://observablehq.com/@twhitehead00)
+- Alexander Kaufmann : [CO2 Emissions](https://observablehq.com/@akaufmann038/final-project)
 
 # Development
 To start a development server, start a local server to view static files.
